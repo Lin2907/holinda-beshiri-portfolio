@@ -1,21 +1,267 @@
+
+/* General Styles */
+body {
+    background-color: #1a202c; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+/* Navigation */
+.navigation {
+    background-color: #e91e63; /* Pink background */
+    color: white;
+    padding: 1rem 0;
+}
+
+.navigation .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navigation .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navigation .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+.personal-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+/* Personal Info Animated Text */
+.info-details span {
+    display: inline-block;
+    font-size: 1.25rem; /* Adjust font size for letters */
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.info-details span:nth-child(1) { animation-delay: 0.1s; }
+.info-details span:nth-child(2) { animation-delay: 0.2s; }
+.info-details span:nth-child(3) { animation-delay: 0.3s; }
+.info-details span:nth-child(4) { animation-delay: 0.4s; }
+.info-details span:nth-child(5) { animation-delay: 0.5s; }
+.info-details span:nth-child(6) { animation-delay: 0.6s; }
+/* Add more nth-child rules for each letter as needed. */
+
+/* Animation Keyframes */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.animated-text span {
+
+.info-details p {
+    margin: 0.5rem 0;
+}
+
+.info-details strong {
+    color: #eb5185;
+}
+
+/* Footer */
+.footer {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.personal-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+.personal-info .animated-text span {
     display: inline-block;
-    animation: fadeIn 1s ease-in-out forwards;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    animation: fadeIn 0.5s ease-in-out forwards;
     opacity: 0;
 }
-.animated-text span:nth-child(1) { animation-delay: 0.1s; }
-.animated-text span:nth-child(2) { animation-delay: 0.2s; }
-.animated-text span:nth-child(3) { animation-delay: 0.3s; }
-.animated-text span:nth-child(4) { animation-delay: 0.4s; }
-.animated-text span:nth-child(5) { animation-delay: 0.5s; }
-.animated-text span:nth-child(6) { animation-delay: 0.6s; }
+
+.personal-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+.personal-info .animated-text span {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}/* General Styles */
+body {
+    background-color: #1a202c; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+/* Navigation */
+.navigation {
+    background-color: #e91e63; /* Pink background */
+    color: white;
+    padding: 1rem 0;
+}
+
+.navigation .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navigation .nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.navigation .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+.personal-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+.personal-info .animated-text span {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #eb5185;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.personal-info .animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.personal-info .animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.personal-info .animated-text span:nth-child(3) { animation-delay: 0.3s; }
+.personal-info .animated-text span:nth-child(4) { animation-delay: 0.4s; }
+.personal-info .animated-text span:nth-child(5) { animation-delay: 0.5s; }
+.personal-info .animated-text span:nth-child(6) { animation-delay: 0.6s; }
+.personal-info .animated-text span:nth-child(7) { animation-delay: 0.7s; }
+
+.info-details p {
+    margin: 0.5rem 0;
+}
+
+.info-details strong {
+    color: #eb5185;
+}
+
+/* Footer */
+/* Footer */
+.footer {
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.footer h5 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.personal-info .animated-text span:nth-child(1) { animation-delay: 0.1s; }
+.personal-info .animated-text span:nth-child(2) { animation-delay: 0.2s; }
+.personal-info .animated-text span:nth-child(3) { animation-delay: 0.3s; }
+.personal-info .animated-text span:nth-child(4) { animation-delay: 0.4s; }
+.personal-info .animated-text span:nth-child(5) { animation-delay: 0.5s; }
+.personal-info .animated-text span:nth-child(6) { animation-delay: 0.6s; }
+.personal-info .animated-text span:nth-child(7) { animation-delay: 0.7s; }
+
